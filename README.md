@@ -107,3 +107,16 @@ URL: https://hd.kinopoisk.ru/
 Переход в раздел "В главных ролях"
 Проверка: Отображается заголовок "Актеры"
 
+Команды по запуску тестов в 3 режимах:
+только UI
+pytest test_UI.py --alluredir=allure-results
+только API
+pytest test_API.py --alluredir=allure-results
+все сразу 
+pytest --alluredir=allure-results
+команда генерации отчета
+allure serve allure-results
+
+
+
+
